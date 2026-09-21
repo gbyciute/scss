@@ -1,0 +1,43 @@
+.card {
+    width: 300px;
+    background-color: lightgray;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 4px;
+
+    header {
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
+
+    .texts {
+        h2 {
+            color: purple;
+        }
+
+        h6 {
+            color: yellow;
+        }
+
+        p {
+            color: blue;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background-color: gray;
+            margin: 20px 0;
+        }
+    }
+
+
+    hr {
+    border: 0;
+    height: 5px;
+    background-color: red;
+    width: 100%;
+}
+}
