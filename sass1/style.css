@@ -1,0 +1,21 @@
+.mygtukas {
+  background-color: rgb(92, 176, 224);
+  color: black;
+  border: 3px solid black;
+  padding: 20px 40px;
+  font-size: 30px;
+}
+.mygtukas .antras {
+  display: none;
+}
+.mygtukas:hover {
+  background-color: deeppink;
+  color: white;
+  border-color: pink;
+}
+.mygtukas:hover .pirmas {
+  display: none;
+}
+.mygtukas:hover .antras {
+  display: inline;
+}/*# sourceMappingURL=style.css.map */
