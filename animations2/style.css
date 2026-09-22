@@ -1,0 +1,130 @@
+body {
+    background-color: pink;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.text {
+    width: 96ch;
+    overflow: hidden;
+    white-space:nowrap;
+
+    animation: text 6s steps(30);
+}
+
+@keyframes text {
+    from{
+        width:0;
+    }
+
+    to {
+        width: 96ch;
+    }
+}
+
+
+.menu {
+    position: fixed;
+    left: 0;
+    top: 60px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu a {
+    width: 25px;
+    height: 26px;
+
+    background-color: white;
+    border-radius: 0 15px 15px 0;
+
+    text-decoration: none;
+
+    overflow: hidden;
+    white-space: nowrap;
+
+    transition: width 0.5s;
+}
+
+/* When mouse is over ONE tab */
+.menu a:hover {
+    width: 240px;
+}
+
+.menu span {
+    margin-left: 70px;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+
+    line-height: 26px;
+}
+
+/* MAKING A BALL */
+
+.ball {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(58, 58, 233);
+    border-radius: 50%;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    animation: bounce 5s linear infinite;
+}
+ @keyframes bounce {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    10% {
+        transform: translate(50px, -50px);
+    }
+
+    20% {
+        transform: translate(100px, 0px);
+    }
+    
+    30% {
+        transform: translate(100px, -50px);
+    }
+
+    40% {
+        transform: translate(150px, 0px);
+    }
+
+    50% {
+        transform: translate(150px, -50px);
+    }
+
+    60% {
+        transform: translate(200px, 0px);
+    }
+
+    70% {
+        transform: translate(200px, -50px);
+    }
+
+    80% {
+        transform: translate(250px, -50px);
+    }
+
+    90% {
+        transform: translate(250px, -50px);
+    }
+
+    100%{
+        transform: translate(300px, 0px);
+    }
+
+
+ }
+
+

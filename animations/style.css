@@ -1,0 +1,59 @@
+ body {
+    background-color: rgb(235, 201, 215);
+ } 
+   
+   /* animation-name: changeBgColour;
+    animation-duration: 4s;
+    animation-delay: 500ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 0;
+} */
+
+/* 
+@keyframes changeBgColour {
+    /* from { */
+        /* background-color: aqua; */
+    /* } */
+    /* to { */
+        /* background-color: blueviolet; */
+    /* } */
+/* 
+    0% {
+        background-color: blue;
+    }
+
+    40% {
+        background-color: blueviolet;
+    }
+    80% {
+        background-color: rgb(38, 90, 90);
+    }
+
+    100% {
+        background-color: rgb(99, 36, 36);
+    }
+} */ 
+
+.kubas {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(29, 29, 80);
+    border-radius: 2px;
+
+    animation-name: MovingCube;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes MovingCube {
+    from{
+        transform: translate(0);
+        background-color: rgb(122, 68, 158);
+    }
+    to {
+        transform: translate(1800px);
+        background-color: palevioletred;
+    }
+}
+
